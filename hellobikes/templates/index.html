@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>海量点</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <style>
+        html, body, #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .input-card .btn:last-child {
+            margin-right: 0;
+        }
+    </style>
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src='https://a.amap.com/jsapi_demos/static/citys.js'></script>
+    <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.14&key=您申请的key值"></script>
+    <script src="/static/map.js"></script>
+</head>
+<body>
+<div style=" background: aliceblue">
+    <button class="btn btn-info submit-btn" data-id="a">30分钟前</button>
+    <button class="btn btn-info submit-btn" data-id="b">2分钟前</button>
+    <button class="btn btn-info submit-btn" data-id="c">中午</button>
+    <button class="btn btn-info submit-btn" data-id="d">2分钟后</button>
+    <button class="btn btn-info submit-btn" data-id="e">30分钟后</button>
+    <span>当前时间:<span id="time-id">2019-05-05 00:00</span></span>
+</div>
+<div id="container" class="map" tabindex="0"></div>
+
+
+
+
+</body>
+</html>
